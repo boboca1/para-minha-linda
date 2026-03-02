@@ -1,43 +1,131 @@
-<style>
-    /* Estilo da Galeria de Fotos */
-    .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
-        width: 90%;
-        max-width: 800px;
-        margin: 30px auto;
-        padding-bottom: 50px;
-    }
-
-    .galeria img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover; /* Faz a foto preencher o quadrado sem distorcer */
-        border-radius: 15px;
-        border: 4px solid white;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-
-    .galeria img:hover {
-        transform: scale(1.05); /* Efeito de zoom quando passa o mouse/dedo */
-    }
-
-    /* Ajuste para telas de celular */
-    @media (max-width: 600px) {
-        .galeria {
-            grid-template-columns: repeat(2, 1fr); /* 2 fotos por linha no celular */
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Maria ❤️</title>
+    <style>
+        :root {
+            --rosa-pastel: #fce4ec; 
+            --rosa-escuro: #f06292; 
+            --vinho: #880e4f;      
         }
-    }
-</style>
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--rosa-pastel);
+            color: var(--vinho);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f8bbd0;
+            width: 100%;
+            padding: 50px 0;
+            border-bottom: 3px solid #f48fb1;
+        }
+
+        h1 { margin: 0; font-size: 2.2em; }
+
+        .contador-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin: -30px auto 30px;
+            width: 85%;
+            max-width: 450px;
+        }
+
+        #timer {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--rosa-escuro);
+        }
+
+        .texto-amor {
+            max-width: 600px;
+            padding: 20px;
+            line-height: 1.7;
+            font-size: 1.1em;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            margin: 20px;
+            white-space: pre-wrap; 
+            text-align: left;
+        }
+
+        /* ESTILO DA GALERIA */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            padding-bottom: 50px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .galeria { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 30px;
+            font-size: 0.9em;
+            border-top: 1px solid #f48fb1;
+            width: 80%;
+        }
+
+        .coracao { color: #e91e63; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Para a Maria ❤️</h1>
+    <p>Um cantinho especial para nós dois.</p>
+</header>
+
+<div class="contador-box">
+    <p>Miguel & Maria juntos há:</p>
+    <div id="timer">Calculando...</div>
+</div>
+
+<div class="texto-amor">
+Eu fico pensando no quanto você consegue ser chata às vezes e, sinceramente, chego à conclusão de que esse seu jeito é uma das coisas que mais me prende a você. É engraçado, porque mesmo quando você me tira do sério, eu não consigo sentir vontade de estar em nenhum outro lugar.
+
+Gosto muito de você, de verdade, e não é um gostar passageiro. É aquele tipo de sentimento que já se acostumou com os seus horários, com as suas teimosias e com esse seu jeito que só você tem. Eu não preciso de perfeição, eu prefiro mil vezes a nossa realidade, com as nossas discussões bobas e a paz que a gente encontra depois.
+
+Quero que você saiba que minha intenção é ficar. Quero viver com você para a vida toda, compartilhando a rotina, os dias comuns e até os momentos em que a sua chatice estiver no nível máximo. Porque, no fundo, a vida faz muito mais sentido com você me irritando do que com qualquer outra pessoa me fazendo sorrir. Você é a minha escolha para todos os dias.
+</div>
+
+<h3>Nossos Momentos ✨</h3>
 <div class="galeria">
-    <img src="foto1.jpg" alt="Nossa Foto 1">
-    <img src="foto2.jpg" alt="Nossa Foto 2">
-    <img src="foto3.jpg" alt="Nossa Foto 3">
-    <img src="foto4.jpg" alt="Nossa Foto 4">
-    <img src="foto5.jpg" alt="Nossa Foto 5">
-    <img src="foto6.jpg" alt="Nossa Foto 6">
-    <img src="foto7.jpg" alt="Nossa Foto 7">
+    <img src="foto1.jpg" alt="Foto 1">
+    <img src="foto2.jpg" alt="Foto 2">
+    <img src="foto3.jpg" alt="Foto 3">
+    <img src="foto4.jpg" alt="Foto 4">
+    <img src="foto5.jpg" alt="Foto 5">
+    <img src="foto6.jpg" alt="Foto 6">
+    <img src="foto7.jpg" alt="Foto 7">
 </div>
