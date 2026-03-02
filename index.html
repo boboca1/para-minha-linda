@@ -59,7 +59,6 @@
             text-align: left;
         }
 
-        /* ESTILO DA GALERIA */
         .galeria {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -128,4 +127,32 @@ Quero que você saiba que minha intenção é ficar. Quero viver com você para 
     <img src="foto5.jpg" alt="Foto 5">
     <img src="foto6.jpg" alt="Foto 6">
     <img src="foto7.jpg" alt="Foto 7">
+    <img src="foto8.jpg" alt="Foto 8">
 </div>
+
+<footer>
+    Com todo o meu amor, <strong>Miguel</strong> <span class="coracao">♥</span> 2024 - 2026
+</footer>
+
+<script>
+    const dataInicio = new Date(2024, 11, 8); 
+
+    function atualizarContador() {
+        const agora = new Date();
+        const diff = agora - dataInicio;
+
+        const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutos = Math.floor((diff / 1000 / 60) % 60);
+        const segundos = Math.floor((diff / 1000) % 60);
+
+        document.getElementById('timer').innerHTML = 
+            dias + " dias, " + horas + "h " + minutos + "m " + segundos + "s";
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+</script>
+
+</body>
+</html>
