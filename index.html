@@ -3,113 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso Amor Eterno</title>
+    <title>Para Minha Maria ❤️</title>
     <style>
+        :root {
+            --rosa-pastel: #fce4ec; /* Fundo suave */
+            --rosa-escuro: #f06292; /* Detalhes e botões */
+            --vinho: #880e4f;      /* Texto principal */
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fff5f5;
-            color: #4a4a4a;
+            background-color: var(--rosa-pastel);
+            color: var(--vinho);
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
 
         header {
-            background-color: #ff4d6d;
-            color: white;
-            padding: 50px 20px;
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            background-color: #f8bbd0;
+            width: 100%;
+            padding: 50px 0;
+            border-bottom: 3px solid #f48fb1;
         }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
+        h1 { margin: 0; font-size: 2.2em; }
 
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
-
-        .counter-box {
+        .contador-box {
             background: white;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin: -40px auto 30px;
-            width: 80%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin: -30px auto 30px;
+            width: 85%;
+            max-width: 450px;
         }
 
-        .time {
-            font-size: 1.5em;
+        #timer {
+            font-size: 1.3em;
             font-weight: bold;
-            color: #ff4d6d;
+            color: var(--rosa-escuro);
         }
 
-        .photo-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
+        .texto-amor {
+            max-width: 600px;
+            padding: 20px;
+            line-height: 1.7;
+            font-size: 1.1em;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            margin: 20px;
+            white-space: pre-wrap; /* Mantém as quebras de linha da sua mensagem */
         }
 
-        .photo-gallery img {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        .photo-gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        .message {
+        .galeria-placeholder {
+            margin: 30px 0;
+            color: #ad1457;
             font-style: italic;
-            font-size: 1.2em;
-            margin: 40px 0;
-            line-height: 1.6;
         }
 
         footer {
-            padding: 30px;
+            margin-top: 50px;
+            padding: 20px;
             font-size: 0.9em;
-            color: #888;
+            border-top: 1px solid #f48fb1;
+            width: 80%;
         }
 
-        .heart {
-            color: #ff4d6d;
-            font-size: 20px;
-        }
+        .coracao { color: #e91e63; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Para o meu grande amor ❤️</h1>
-    <p>Cada segundo ao seu lado é um presente.</p>
+    <h1>Para a Maria ❤️</h1>
+    <p>Um cantinho especial para nós dois.</p>
 </header>
 
-<div class="container">
-    <div class="counter-box">
-        <p>Estamos juntos há:</p>
-        <div id="timer" class="time">Calculando tempo...</div>
-    </div>
+<div class="contador-box">
+    <p>Miguel & Maria juntos há:</p>
+    <div id="timer">Calculando...</div>
+</div>
 
-    <div class="message">
-        "Desde que você chegou, minha vida ganhou cores que eu nem sabia que existiam. 
-        Este espaço é pequeno perto do que sinto, mas é um lembrete do nosso 'para sempre'."
-    </div>
+<div class="texto-amor">
+Eu fico pensando no quanto você consegue ser chata às vezes e, sinceramente, chego à conclusão de que esse seu jeito é uma das coisas que mais me prende a você. É engraçado, porque mesmo quando você me tira do sério, eu não consigo sentir vontade de estar em nenhum outro lugar.
 
-    <h3>Nossos Momentos</h3>
-    <div class="photo-gallery">
-        <img src="https://via.placeholder.com/300x300?text=Sua+Foto+Aqui" alt="Nossa Foto">
-        <img src="https://via.placeholder.com/300x300?text=Outro+Momento" alt="Nossa Foto">
-        <img src="https://via.placeholder.com/300x300?text=Viagem+Especial" alt="Nossa Foto">
-    </div>
+Gosto muito de você, de verdade, e não é um gostar passageiro. É aquele tipo de sentimento que já se acostumou com os seus horários, com as suas teimosias e com esse seu jeito que só você tem. Eu não preciso de perfeição, eu prefiro mil vezes a nossa realidade, com as nossas discussões bobas e a paz que a gente encontra depois.
+
+Quero que você saiba que minha intenção é ficar. Quero viver com você para a vida toda, compartilhando a rotina, os dias comuns e até os momentos em que a sua chatice estiver no nível máximo. Porque, no fundo, a vida faz muito mais sentido com você me irritando do que com qualquer outra pessoa me fazendo sorrir. Você é a minha escolha para todos os dias.
+</div>
+
+<div class="galeria-placeholder">
+    📸 (Espaço reservado para nossas fotos favoritas)
 </div>
 
 <footer>
-    Feito com <span class="heart">❤</span> por [Seu Nome]<br>
-    2026 &copy; Todos os nossos beijos reservados.
+    Com todo o meu amor, <strong>Miguel</strong> <span class="coracao">♥</span> 2024 - 2026
 </footer>
 
 <script>
-    // DEFINE A DATA DO INÍCIO (Ano, Mês - 1, Dia) -> Janeiro é 0, Fevereiro é 1...
-    const startDate = new Date(2022, 5, 12); // Ex
+    // Data de início: 08/12/2024
+    // No JS: Ano, Mês (Janeiro é 0, Dezembro é 11), Dia
+    const dataInicio = new Date(2024, 11, 8); 
+
+    function atualizarContador() {
+        const agora = new Date();
+        const diff = agora - dataInicio;
+
+        const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutos = Math.floor((diff / 1000 / 60) % 60);
+        const segundos = Math.floor((diff / 1000) % 60);
+
+        document.getElementById('timer').innerHTML = 
+            dias + " dias, " + horas + "h " + minutos + "m " + segundos + "s";
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+</script>
+
+</body>
+</html>
